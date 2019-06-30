@@ -1,0 +1,24 @@
+#fhInvoice div.label {
+	float: left;
+	width: 30%;
+	text-align: right;
+	margin-top: 5px;
+}
+
+#fhInvoice div.value {
+	float: right;
+	width: 67%;
+	text-align: left;
+}
+
+#fhInvoice div.value input, #fhInvoice div.value textarea {
+	width: 95%;
+}
+
+#fhInvoice_form .row {
+	margin-bottom: 5px;
+}
+
+#fhInvoice .fhInvoice_viewMode {
+	margin-top: 3px;
+}

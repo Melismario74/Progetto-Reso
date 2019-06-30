@@ -1,0 +1,24 @@
+#fhArrival div.label {
+	float: left;
+	width: 30%;
+	text-align: right;
+	margin-top: 5px;
+}
+
+#fhArrival div.value {
+	float: right;
+	width: 67%;
+	text-align: left;
+}
+
+#fhArrival div.value input, #fhArrival div.value textarea {
+	width: 95%;
+}
+
+#fhArrival_form .row {
+	margin-bottom: 5px;
+}
+
+#fhArrival .fhArrival_viewMode {
+	margin-top: 3px;
+}

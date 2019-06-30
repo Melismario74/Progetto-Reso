@@ -1,0 +1,157 @@
+.footer {
+    background-color: #F5F5F5;
+    border-top: 1px solid #E5E5E5;
+    margin-top: 200px;
+    padding: 30px;
+    text-align: center;
+    font-size: small;
+}
+
+.span1_5 {
+	width: 105px;
+}
+
+.span2_5 {
+	width: 165px;
+}
+
+h3.title, div.title {
+	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h4.title {
+	border-bottom: 1px solid #ccc;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+.title .edit {
+	font-style: italic;
+	font-size: small;
+	margin-left: 3px;
+}
+
+form.form-condensed .control-group {
+	margin-bottom: 10px;
+}
+
+form .control-actions {
+	margin-top: 20px;
+}
+
+form .control-first {
+	margin-top: 25px;
+}
+
+form .controls-row span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 2px;
+}
+
+label.error {
+	display: none !important;
+}
+
+label.inline {
+	display: inline-block;
+	margin-bottom: 0;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+input.error, select.error {
+	border-color: #E9322D;
+}
+
+input.input-dotted {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px dotted #ccc;
+	border-radius: 0px;
+	box-shadow: none;
+	transition: none;
+}
+
+input.input-dotted:focus {
+	box-shadow: none;
+	border-color: #666;
+}
+
+table td.total {
+	border-top: 2px solid #333;
+}
+
+table.table-borderless td {
+	border: none;
+}
+
+i.icon-gray {
+	opacity: 0.9;
+}
+
+a.a-danger {
+	color: #cd0000;
+	text-decoration: underline;
+}
+
+a.a-small {
+	font-size: small;
+	font-style: italic;
+}
+
+.modal.modal-large {
+    width: 780px;
+    margin-left: -390px;
+}
+
+.modal.modal-large.fade.in {
+    top: 5%;
+}
+
+.modal.modal-large .modal-body {
+	max-height: 600px;
+}
+
+.alert input[type="checkbox"] {
+	margin-top: 0px;
+}
+
+.results table tfoot {
+	font-size: small;
+}
+
+.results table tfoot td .previous {
+	margin-right: 5px;
+}
+
+.results table tfoot td .next {
+	margin-left: 5px;
+}
+
+/** HEADER AND TOOLBAR **/
+
+.container > .headerbar {
+	margin-bottom: 10px;
+}
+
+.container > .headerbar h2 {
+	margin-top: 0px;
+}
+
+.container > .toolbar {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+/** CUSTOM **/
+
+.jquery-image-zoom {
+	z-index: 9999 !important;
+	background-color: #fff;
+}

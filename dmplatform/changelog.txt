@@ -1,0 +1,12 @@
+v.1.0.1
+=======
+
+- [DMUser] Aggiunta possibilità di fake login
+- [DMApi] Migliorata possibilità di ritornare errori HTTP
+- [JPlatform] Aggiornata alla versione 12.3
+
+v.1.0.0
+=======
+
+- [DMView] Corretto bug che impediva il corretto caricamento di template custom
+- [DMAppData] Prima versione

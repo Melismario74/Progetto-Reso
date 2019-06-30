@@ -1,0 +1,24 @@
+#fhOrder div.label {
+	float: left;
+	width: 30%;
+	text-align: right;
+	margin-top: 5px;
+}
+
+#fhOrder div.value {
+	float: right;
+	width: 67%;
+	text-align: left;
+}
+
+#fhOrder div.value input, #fhOrder div.value textarea {
+	width: 95%;
+}
+
+#fhOrder_form .row {
+	margin-bottom: 5px;
+}
+
+#fhOrder .fhOrder_viewMode {
+	margin-top: 3px;
+}

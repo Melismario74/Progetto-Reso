@@ -1,0 +1,65 @@
+var popupLdv_data = {};
+
+
+
+/* Avallo Mario per programma feslinea*/
+
+
+function popupLdv_load(ldvId) {
+
+	var tbodyElement = '#popupLdv table tbody';
+	jQuery(tbodyElement).html("").hide();
+	
+	
+	jQuery.post(
+	    'index.php?controller=ldv&task=jsonLoadLdv&type=json',
+	    {
+	    	"ldvId": ldvId
+	    },
+	    function (data) {
+	    	
+	    	var result = DMResponse.validateJson(data);
+	    	
+	    	if ((result != false) && (result.result >= 0)) {	
+	    		popupLdv_data.ldv = result.ldv;
+				popupLdv_data.ldvId = result.ldv.ldv_id;
+					if (popupLdv_data.ldv.rows == undefined) {
+						popupLdv_data.ldv.rows = Array();
+					}
+	    		
+	    		jQuery('#popupLdv_code').html(popupLdv_data.ldv.ldv_code);
+	    		jQuery('#popupLdv_date').html(popupLdv_data.ldv.ldv_date_str);
+	    		
+					if (popupLdv_data.ldv.archived == 1) {
+						jQuery('#popupLdv_labelArchived').show();
+						jQuery('#popupLdv_btnArchivedToggle').html('Annulla archiviazione');
+					} else {
+						jQuery('#popupLdv_labelArchived').hide();
+						jQuery('#popupLdv_btnArchivedToggle').html('Archivia lista di carico');
+					}
+	    		
+						for (var i = 0; i < popupLdv_data.ldv.rows.length; i++) {
+							var rowData = popupLdv_data.ldv.rows[i];
+						
+							var rowHtml = 
+								'<tr id="popupLdv_rows_' + rowData.uniqueId + '">' +
+									'<td style="text-align: center">' + rowData.ddt_code_str + '</td>' +
+									'<td style="text-align: center">' + rowData.ddt_date_str + '</td>' +		
+									'<td style="text-align: center">' + rowData.cargo + '</td>' +	
+									'<td style="text-align: center">' + rowData.notes + '</td>' +	
+									'<td><button class="btn btn-mini btn-danger" onclick="popupLdv_deleteRow(\'' + rowData.uniqueId  + '\'); return false;"><i class="icon-white icon-remove"></i></button></td>' +
+									'<td><button class="btn btn-mini btn-success" onclick="popupLdv_deleteRow(\'' + rowData.uniqueId  + '\'); return false;"><i class="icon-white icon-camera"></i></button></td>' +
+								'</tr>';
+							
+							jQuery('#popupLdv_table_ddt tbody').append(rowHtml);
+						
+						}    		
+	    		jQuery(tbodyElement).slideDown();
+	    		
+	    	} else {
+	    		alert("Si è verificato un errore (" + result.result + "): " + result.description);
+	    	}
+	    }
+	);
+	
+}

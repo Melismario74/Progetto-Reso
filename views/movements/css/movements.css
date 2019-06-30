@@ -1,0 +1,5 @@
+#fhMovements_results_table tr.detail td {
+	font-size: smaller;
+	font-style: italic;
+	border-bottom: 2px solid #999;
+}

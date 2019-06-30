@@ -1,0 +1,10 @@
+{
+	"-10": "Invalid request",
+	"-100": "Not permitted",
+	"-110": "Not authorized",
+	"-200": "Store failed",
+	"-300": "Load failed",
+	"-310": "Download failed",
+	"-400": "Delete error",
+	"-1000": "Generic processing error"
+}
