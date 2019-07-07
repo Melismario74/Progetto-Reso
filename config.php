@@ -15,9 +15,9 @@
 		
 		public $db_driver = 'mysqli';
 		public $db_host = 'localhost';
-		public $db_user = 'root';
-		public $db_password = 'mmelism00';
-		public $db_database = 'reso';
+		public $db_user = '';
+		public $db_password = '';
+		public $db_database = '';
 		public $db_prefix = 'fh_';
 		
 		public $user_table = 'fh_user';
@@ -40,8 +40,8 @@
 		public $secret = 's784t2f2983x23';
 		
 		public $ftp_host = '127.0.0.1';
-		public $ftp_user = 'Mario';
-		public $ftp_password = 'mmelism00';
+		public $ftp_user = '';
+		public $ftp_password = '';
 		public $ftp_articles_base = '';
 		public $ftp_chargelist_base = 'chargelists';
 		public $ftp_movements_export_base = '';
